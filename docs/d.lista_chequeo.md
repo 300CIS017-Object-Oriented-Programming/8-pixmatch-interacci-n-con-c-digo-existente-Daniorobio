@@ -9,16 +9,16 @@ Diligencie la siguiente lista de chequeo a partir del estudio del código fuente
 #### Complejidad
 - [ ] **Estructuras de Control Anidadas Profundamente:** Uso excesivo de bucles y condicionales anidados que complica la lectura. _Ejemplo: Tres o más niveles de bucles o condicionales dentro de una función._
 - [ ] **Código separable:** Funciones que intentan hacer demasiado, complicando su uso y mantenimiento. Se podrían dividir tareas complejas en funciones más pequeñas con una única responsabilidad _Ejemplo: Una función que carga datos, realiza cálculos y además genera gráficos._
-- [ ] **Código Duplicado:** Presencia de bloques de código muy similares en diferentes partes del programa. _Ejemplo: Múltiples funciones que contienen las mismas líneas de código para procesar datos._
+- [x] **Código Duplicado:** Presencia de bloques de código muy similares en diferentes partes del programa. _Ejemplo: Múltiples funciones que contienen las mismas líneas de código para procesar datos._
 - [ ] **Falta de estructura:** Sería beneficioso definir nuevos tipos de datos (o clases) para representar entidades complejas dentro del código.
 
 #### Cohesión y Organización
-- [ ] **Baja Cohesión:** Módulos o funciones que tienen múltiples responsabilidades no relacionadas. _Ejemplo: Se pueden identificar secciones de código que podrían convertirse en funciones o módulos independientes_
-- [ ] **Modularidad Pobre:** Falta de separación clara entre distintas funcionalidades, dificultando la reutilización de código. _Ejemplo: Un script monolítico sin funciones definidas, donde todo el código está en el nivel superior._
+- [x] **Baja Cohesión:** Módulos o funciones que tienen múltiples responsabilidades no relacionadas. _Ejemplo: Se pueden identificar secciones de código que podrían convertirse en funciones o módulos independientes_
+- [x] **Modularidad Pobre:** Falta de separación clara entre distintas funcionalidades, dificultando la reutilización de código. _Ejemplo: Un script monolítico sin funciones definidas, donde todo el código está en el nivel superior._
 
 #### Acoplamiento y Dependencias
 - [ ] **Alto Acoplamiento:** Cambios en una parte del código requieren ajustes frecuentes en otras partes. _Ejemplo: Modificar una estructura de datos que requiere cambios en múltiples funciones que dependen directamente de esa estructura._
-- [ ] **Dependencia de Detalles Internos:** Funciones que dependen de los detalles internos de otras, violando el principio de encapsulamiento. _Ejemplo: Acceso directo a campos de datos de un objeto desde fuera de la clase, en lugar de usar métodos de acceso._
+- [x] **Dependencia de Detalles Internos:** Funciones que dependen de los detalles internos de otras, violando el principio de encapsulamiento. _Ejemplo: Acceso directo a campos de datos de un objeto desde fuera de la clase, en lugar de usar métodos de acceso._
 - [ ] **Uso de variables globales:** Las variables globales generan dependencias por lo que es difícil que el estado del programa sea gestionado de forma previsible y controlada. No se encapsulan las variables globales dentro de funciones o clases donde sea posible para minimizar efectos secundarios
 
 #### Mantenibilidad y Escalabilidad
