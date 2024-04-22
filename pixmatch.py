@@ -64,6 +64,7 @@ def ReduceGapFromPageTop(wch_section = 'main page'):
     
 def Leaderboard(what_to_do):
     if what_to_do == 'create':
+
         if mystate.GameDetails[3] != '':
             if os.path.isfile(vpth + 'leaderboard.json') == False:
                 tmpdict = {}
@@ -74,7 +75,7 @@ def Leaderboard(what_to_do):
             if os.path.isfile(vpth + 'leaderboard.json'):
                 leaderboard = json.load(open(vpth + 'leaderboard.json'))    # read file
                 leaderboard_dict_lngth = len(leaderboard)
-                    
+
                 leaderboard[str(leaderboard_dict_lngth + 1)] = {'NameCountry': mystate.GameDetails[3], 'HighestScore': mystate.myscore}
                 leaderboard = dict(sorted(leaderboard.items(), key=lambda item: item[1]['HighestScore'], reverse=True))  # sort desc
 
@@ -87,7 +88,7 @@ def Leaderboard(what_to_do):
         if mystate.GameDetails[3] != '':       # record in leaderboard only if player name is provided
             if os.path.isfile(vpth + 'leaderboard.json'):
                 leaderboard = json.load(open(vpth + 'leaderboard.json'))    # read file
-                    
+
                 leaderboard = dict(sorted(leaderboard.items(), key=lambda item: item[1]['HighestScore'], reverse=True))  # sort desc
 
                 sc0, sc1, sc2, sc3 = st.columns((2,3,3,3))
